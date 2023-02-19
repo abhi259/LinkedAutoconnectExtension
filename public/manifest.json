@@ -1,0 +1,25 @@
+
+
+
+{
+  "name": "Linkedin Auto Connect",
+  "version": "0.1",
+  "manifest_version": 3,
+  "background": {
+    "service_worker": "background.js"
+  },
+  "icons": {
+    "16": "LinkedinIcon.png",
+    "48": "LinkedinIcon.png",
+    "128": "LinkedinIcon.png"
+  },
+  "permissions": [
+    "scripting",
+    "activeTab"
+  ],
+  "action": {
+    "default_popup": "index.html"
+  },
+  "host_permissions": ["https://*.linkedin.com/*"]
+  
+}
